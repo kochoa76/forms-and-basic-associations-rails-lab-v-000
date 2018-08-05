@@ -21,7 +21,7 @@ class Song < ActiveRecord::Base
 
   def note_contents=(notes)
     notes.each do |content|
-      if content != ""
+      if content.strip != ""
         self.notes.build(content: content)
       end
     end
