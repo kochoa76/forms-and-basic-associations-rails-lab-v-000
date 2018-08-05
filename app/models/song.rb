@@ -24,9 +24,8 @@ class Song < ActiveRecord::Base
       if content != ""
         self.notes.build(content: content)
       end
-      self.note.content 
-
     end
+    self.note.content 
   end
 
   def note_contents
