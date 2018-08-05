@@ -25,7 +25,7 @@ class Song < ActiveRecord::Base
         self.notes.build(content: content)
         self.note.content 
       end
-      
+
     end
   end
 
